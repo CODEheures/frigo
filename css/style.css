@@ -1,0 +1,629 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Icones icomoon.io */
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?6tuofq');
+    src:url('fonts/icomoon.eot?6tuofq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6tuofq') format('truetype'),
+    url('fonts/icomoon.woff?6tuofq') format('woff'),
+    url('fonts/icomoon.svg?6tuofq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+    content: "\e900";
+}
+.icon-hour-glass:before {
+    content: "\e905";
+}
+.icon-zoom-in:before {
+    content: "\e906";
+}
+.icon-zoom-out:before {
+    content: "\e907";
+}
+.icon-menu:before {
+    content: "\e901";
+}
+.icon-menu3:before {
+    content: "\e902";
+}
+.icon-enter:before {
+    content: "\e903";
+}
+.icon-exit:before {
+    content: "\e904";
+}
+
+/* style des checkbox */
+input[type=checkbox] {
+    visibility: hidden; }
+
+.check-style3 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 4.8rem;
+    height: 2.1rem;
+    background: #333;
+    margin: 0px 1rem;
+    border-radius: 5rem;
+    position: relative;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2); }
+
+.check-style3:after {
+    content: 'IN';
+    font: 0.7rem/2.2rem Arial, sans-serif;
+    color: #000;
+    position: absolute;
+    right: 0.6rem;
+    z-index: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15); }
+.check-style3:before {
+    content: 'OUT';
+    font: 0.7rem/2.2rem Arial, sans-serif;
+    color: #ffee7b;
+    position: absolute;
+    left: 0.3rem;
+    z-index: 0;
+    font-weight: bold; }
+.check-style3 label {
+    display: block;
+    width: 2.3rem;
+    height: 1.6rem;
+    border-radius: 1rem;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 0.24rem;
+    left: 0.3rem;
+    z-index: 1;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    background: #fcfff4;
+    background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); }
+
+input[type=checkbox]:checked + label {
+    left: 2.2rem; }
+
+
+/* header */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:100%;
+    height: 100%;
+}
+
+body {
+    color: black;
+    font-family: "Julius sans One", sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    position: relative;
+    margin: auto;
+    color: white;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    line-height: 6rem;
+    border-bottom: 1px solid black;
+    background-color: rgb(5, 151, 173);
+    box-shadow: 2px 0px 2px rgba(255,255,255,0.5);
+}
+
+header .header-icon {
+    display: inline-block;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+header .header-icon img {
+    vertical-align: middle;
+    height: 4rem;
+}
+
+header h1 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size:2.7rem;
+    width: 60%;
+    float: left;
+    font-family: "Julius sans One";
+}
+
+header div.hamburger {
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+}
+
+header div.hamburger a span {
+    color: white;
+    font-size: 4rem;
+    padding-right: 1rem;
+    vertical-align: middle;
+}
+
+header p {
+    font-size:1.5rem;
+    line-height:1rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+header p span i {
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+
+/*navigation*/
+nav.menu-list {
+    display: block;
+    position: absolute;
+    right:0;
+    top: 15%;
+    bottom: 0;
+    width: 35%;
+    background-color: #222;
+
+    transition: all;
+    transition-duration: 800ms;
+}
+
+nav.menu-list a {
+    display: block;
+    padding-left: 1rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    border-bottom:1px solid black;
+    background-image: linear-gradient(to bottom, #333, #111);
+    box-shadow: 0px 0px 2px rgba(255,255,255,0.5);
+}
+
+nav.menu-list a:hover {
+    background-image: linear-gradient(to bottom, #424242, #212121);
+}
+
+section.main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15%;
+    bottom: 20%;
+    background-color: rgb(32, 38, 63);
+    box-shadow: 0px 1px 2px rgba(255,255,255,0.5);
+    padding: 1rem;
+    overflow-x: hidden;
+}
+
+
+/* section principale*/
+section.main .home,
+section.main .fill,
+section.main .empty
+{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+section.main .home .sort {
+    text-align: center;
+    font-size:1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+section.main .home .sort .left {
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+section.main .home .sort .right {
+    display: inline-block;
+    float: right;
+    width: 50%;
+}
+
+section.main .home .sort a {
+    display: inline-block;
+    width: 12rem;
+    max-width: 90%;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 0.7rem 1rem;
+}
+
+section.main .home .sort a.active {
+    background-color: #2a91ac;
+}
+
+section.main .home .list {
+    font-family: Raleway, sans-serif;
+    font-weight: 100;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    font-size:1.6rem;
+    width: 90%;
+    margin: auto;
+}
+
+section.main .home .list h4
+{
+    border-bottom:1px solid rgb(5, 151, 173);
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+section.main .home .list h4:not(:first-of-type)
+{
+    margin-top: 1rem;
+}
+
+section.main .home .list ul li
+{
+    width: 26rem;
+    margin:auto;
+    line-height: 1.9rem;
+    letter-spacing:0.1rem;
+    text-transform: capitalize;
+}
+
+section.main .home .list ul li a span.name,
+section.main div.empty form .list ul span.name
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 12rem;
+    height: 1.9rem;
+    overflow: hidden;
+    text-overflow: '';
+}
+
+section.main .home .list ol ul a span.date-list,
+section.main div.empty form .list ul span.date-list
+{
+    font-family: 'Source Code Pro';
+    vertical-align: middle;
+    letter-spacing: -0.15rem;
+    padding-left: 1rem;
+}
+
+section.main .home .list .passed:before,
+section.main .empty .list .passed:before
+{
+    font-family: 'icomoon';
+    font-size: 1.2rem;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.2rem;
+    content:"\e905";
+    color: #d51b10;
+    padding-right: 0.5rem;
+    vertical-align: middle;
+}
+
+section.main .home .list .today:before,
+section.main .empty .list .today:before
+{
+    font-family: 'icomoon';
+    font-size: 1.2rem;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.2rem;
+    content:"\e905";
+    color: #d5bc03;
+    padding-right: 0.5rem;
+    vertical-align: middle;
+}
+
+section.main .home .list .futur:before,
+section.main .empty .list .futur:before
+{
+    font-family: 'icomoon';
+    font-size: 1.2rem;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.2rem;
+    content:"\e905";
+    color: transparent;
+    padding-right: 0.5rem;
+    vertical-align: middle;
+}
+
+nav.footer {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background-color: rgb(78, 90, 125);
+    text-align: center;
+}
+
+nav.footer .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    box-shadow: 1px 2px 2px rgba(255,255,255,0.5);
+}
+
+nav.footer .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(255,255,255,0.5);
+}
+
+nav.footer a {
+    position: relative;
+    overflow: hidden;
+}
+
+nav.footer a:hover {
+    border-top: 0.3rem #2a91ac solid;
+}
+
+nav.footer a div.btn {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin:auto;
+    padding-top:3rem;
+}
+
+nav.footer a div.btn p:first-child{
+    font-size: 2.3rem;
+}
+
+section.main div.back-categorie1,
+section.main div.back-categorie2
+{
+    position: relative;
+    height: 50%;
+}
+
+section.main div.back-aliment1
+{
+    position: relative;
+    height: 37%;
+}
+
+section.main div.back-aliment2
+{
+    padding-top: 10%;
+    position: relative;
+    height: 63%;
+}
+
+
+section.main div.fill form .form-group label,
+section.main div.empty form .form-group label,
+section.main div.back-categorie1 form .form-group label,
+section.main div.back-categorie2 form .form-group label,
+section.main div.back-aliment1 form .form-group label,
+section.main div.back-aliment2 form .form-group label
+{
+    display: block;
+    font-size: 1.4rem;
+}
+
+section.main div.fill form .form-group:not(:first-child),
+section.main div.empty form .form-group:not(:first-child),
+section.main div.back-categorie1 form .form-group:not(:first-child),
+section.main div.back-categorie2 form .form-group:not(:first-child),
+section.main div.back-aliment1 form .form-group:not(:first-child),
+section.main div.back-aliment2 form .form-group:not(:first-child)
+{
+    margin-top: 1.3rem;
+}
+
+section.main div.fill form .form-group select,
+section.main div.empty form .form-group select,
+section.main div.back-categorie1 form .form-group select,
+section.main div.back-categorie2 form .form-group select,
+section.main div.back-aliment1 form .form-group select,
+section.main div.back-aliment2 form .form-group select,
+section.main div.back-categorie1 form input[type="text"],
+section.main div.back-categorie2 form input[type="text"],
+section.main div.back-aliment1 form input[type="text"],
+section.main div.back-aliment2 form input[type="text"]
+{
+     font-size: 2rem;
+     width: 100%;
+     color: #4e5a7d;
+     border-radius: 0.5rem;
+     border: none;
+}
+
+section.main div.fill form .form-group select.year,
+section.main div.fill form .form-group select.month,
+section.main div.fill form .form-group select.day,
+section.main div.empty form .form-group select.year,
+section.main div.empty form .form-group select.month,
+section.main div.empty form .form-group select.day
+{
+    width: 30%;
+}
+
+section.main div.fill form input[type="submit"],
+section.main div.empty form input[type="submit"],
+section.main div.back-categorie1 form input[type="submit"],
+section.main div.back-categorie2 form input[type="submit"],
+section.main div.back-aliment1 form input[type="submit"],
+section.main div.back-aliment2 form input[type="submit"]
+{
+    position: absolute;
+    bottom: 1.3rem;
+    right: 1.3rem;
+    margin-top:1.3rem;
+    font-size: 1.6rem;
+    width: 25%;
+    color: #fff;
+    background-color: #0597ad;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+section.main div.empty form .list {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #4e5a7d;
+}
+
+section.main div.empty form .list ul {
+    margin-top: 1.6rem;
+    line-height: 2.9rem;
+    letter-spacing:0.1rem;
+    width: 100%;
+}
+
+section.main div.empty form .list ul li span.name,
+section.main div.empty form .list ul li span.date-list
+{
+    height: 2.9rem;
+}
+
+section.main div.empty form .list ul li:not(:last-child){
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+section.main div.empty form .list ul li .check-style3{
+    margin: 0;
+    margin-left: 4rem;
+    vertical-align: middle;
+}
+
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+    html {
+        font-size:3vw;
+    }
+    .container {
+
+        min-width: unset;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container header p {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 481px),
+only screen and (max-device-width: 480px) and (orientation: landscape)
+{
+    .container:before {
+        content: "";
+        display: block;
+        padding-top: 166%;
+    }
+}
+
